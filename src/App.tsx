@@ -1,12 +1,14 @@
+import { Content } from './components/Content/Content'
 import { Navbar } from './components/Navbar/Navbar'
-import styles from "./interface.module.sass"
+import  "./interface.sass"
 
 function App() {
 
   return (
 
-      <div className={styles.interface}>
+      <div className="interface">
         <Navbar/>
+        <Content/>
       </div>
   )
 }
