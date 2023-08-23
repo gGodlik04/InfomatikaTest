@@ -11,6 +11,7 @@ export const Content: FC<IContent> = (props: IContent) => {
 
 
     useEffect(() => {
+        // window.scrollTo(100, document.body.scrollHeight);
         gsapMain();
         gsapHeader();
 
@@ -20,11 +21,11 @@ export const Content: FC<IContent> = (props: IContent) => {
 
     return(
         <div className="hexagons">
-            <div className="hexagon hexagon1" ></div>
-            <div className="hexagon hexagon2" ></div>
-            <div className="hexagon hexagon3" ></div>
-            <div className="hexagon hexagon4" ></div>
-            <div className="hexagon hexagon5" ></div>
+            <div className="hexagon hexagon1" ><p>ewqewqewq</p></div>
+            <div className="hexagon hexagon2" ><p>ewqewqewq</p></div>
+            <div className="hexagon hexagon3" ><p>ewqewqewq</p></div>
+            <div className="hexagon hexagon4" ><p>ewqewqewq</p></div>
+            <div className="hexagon hexagon5" ><p>ewqewqewq</p></div>
         </div>
     )
 }
