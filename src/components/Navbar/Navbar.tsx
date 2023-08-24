@@ -17,11 +17,11 @@ export const Navbar: FC<INavbar> = (props: INavbar) => {
     return (
         <div>
             <div className="navbar">
-                <NavLink to={'#'}>Билеты и абонементы</NavLink>
-                <NavLink to={'#'}>Как купить?</NavLink>
-                <NavLink to={'#'}>Правила</NavLink>
-                    <NavLink to={'#'}>Возврат билетов</NavLink>
-                <div>
+                <NavLink to={'#'}  className="navbar__href">Билеты и абонементы</NavLink>
+                <NavLink to={'#'}  className="navbar__href">Как купить?</NavLink>
+                <NavLink to={'#'}  className="navbar__href">Правила</NavLink>
+                <NavLink to={'#'}  className="navbar__href">Возврат билетов</NavLink>
+                <div className="navbar__href-shake">
                     <HandySvg
                         src={LogInSvg.toString()}
                         width="30"

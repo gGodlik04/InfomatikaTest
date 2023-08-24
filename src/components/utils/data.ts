@@ -6,9 +6,34 @@ export type dataType = {
 
 
 export const data = [{
-    "id": 0,
-     "stadium": "Уралец",
-     "firstMember": "ЦСКА",
-     "secondMember": "Ак Барс"
-    }
+        "id": 0,
+        "stadium": "Уралец",
+        "firstMember": "ЦСКА",
+        "secondMember": "Ак Барс"
+    },
+    {
+        "id": 0,
+         "stadium": "Уралец",
+         "firstMember": "ЦСКА",
+         "secondMember": "Ак Барс"
+    },
+    {
+        "id": 0,
+         "stadium": "Уралец",
+         "firstMember": "ЦСКА",
+         "secondMember": "Ак Барс"
+    },
+    {
+        "id": 0,
+         "stadium": "Уралец",
+         "firstMember": "ЦСКА",
+         "secondMember": "Ак Барс"
+    },
+    {
+        "id": 0,
+         "stadium": "Уралец",
+         "firstMember": "ЦСКА",
+         "secondMember": "Ак Барс"
+    },
+    
 ]

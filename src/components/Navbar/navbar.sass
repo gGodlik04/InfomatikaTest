@@ -3,6 +3,35 @@
     color: #fff
     display: flex
     justify-content: space-between
+
+    &__href-shake
+        text-decoration: none
+        position: relative
+        bottom: 5px
+        
+        a
+            font-size: 20px
+            font-family: UbuntuRegular
+            color: #fff
+            text-decoration: none
+
+    &__href-shake:hover
+        svg
+            animation: shaking 0.25s infinite
+
+    @keyframes shaking 
+        0%  
+            transform: translate(0, 0) rotate(0deg)
+        25%  
+            transform: translate(5px, 5px) rotate(5deg)
+        50% 
+            transform: translate(0, 0) rotate(0eg)
+        75%  
+            transform: translate(-5px, 5px) rotate(-5deg)
+        100%  
+            transform: translate(0, 0) rotate(0deg)
+
+
     
 
     &__logInSvg
@@ -11,17 +40,36 @@
         position: relative
         top: 5px
 
-    a
+    &__href
+        display: inline-block
         color: #fff
         text-decoration: none
-        font-size: 25px
+        font-size: 20px
+        position: relative
+    
+    &__href:hover::after
+        width: 100%
+
+    &__href::after
+        content:''
+        width: 0%
+        position: absolute
+        left: 0
+        right: 0
+        bottom: 7px
+        height: 2px
+        border-radius: 10px
+        background-color: #fff
+        transition: width 0.4s ease-in-out
 
     &__menu
         display: flex
         flex-direction: column
         flex-wrap: wrap
         justify-content: center
-        margin-top: 10px
+        margin-top: 5px
+        align-items: end
+        width: 45px
 
 
         &_span
@@ -31,9 +79,17 @@
             width: 25px
             margin-bottom: 10px
             background-color: #fff
+            transition: width 1s ease-in-out
 
     .span1, .span3
         width: 45px
-    
-    .span2
-        margin-left: 20px
+
+    &__menu:hover
+        .span2
+             width: 45px
+             transition: width 1s ease-in-out
+
+        .span1, .span3
+            width: 25px
+            transition: width 1s ease-in-out
+

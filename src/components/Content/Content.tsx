@@ -1,31 +1,44 @@
-import { FC, MutableRefObject, useEffect, useRef } from "react";
+import { FC, useEffect, } from "react";
 import { IContent } from "../Interface/IContent";
 import "./content.sass"
 import { gsapMain } from "../utils/gsap/gsapMain";
 import { gsapHeader } from "../utils/gsap/gsapNavbar";
+import {data} from "../utils/data"
 
 
 
 export const Content: FC<IContent> = (props: IContent) => {
 
+        const dataContent = data;
 
 
     useEffect(() => {
-        // window.scrollTo(100, document.body.scrollHeight);
+        window.scrollTo(0, 2500);
         gsapMain();
         gsapHeader();
-
-
-
+        console.log(data);
     },[])
+
+    if(!data){
+        return(
+            <div>
+                Данные нет!
+            </div>
+        )
+    }
 
     return(
         <div className="hexagons">
-            <div className="hexagon hexagon1" ><p>ewqewqewq</p></div>
-            <div className="hexagon hexagon2" ><p>ewqewqewq</p></div>
-            <div className="hexagon hexagon3" ><p>ewqewqewq</p></div>
-            <div className="hexagon hexagon4" ><p>ewqewqewq</p></div>
-            <div className="hexagon hexagon5" ><p>ewqewqewq</p></div>
+            {
+                dataContent.map((elem, i) => {
+                    const nameClass:string = `hexagon hexagon${i+1}`
+                    return (
+                        <div>
+                            <div className={nameClass}><p>{elem.stadium}</p></div>
+                        </div>
+                    )
+                })
+            }
         </div>
     )
 }
