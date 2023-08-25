@@ -1,31 +1,12 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger)
 
 
 export function gsapMain () {
 
 
 
-    // const scrollContainer = document.querySelector("#scroll") as HTMLElement;
-
-    // scrollContainer?.addEventListener("wheel", (evt) => {
-    //     if (window.pageYOffset == 0){
-    //         console.log(window.pageYOffset)
-    //         console.log(evt.deltaY)
-    //         console.log(scrollContainer.scrollWidth)
-    //         scrollContainer.scrollLeft += 100;
-    //     }
-    // });
-
-
-    // function test (){
-     
-       
-    //    console.log(window.pageYOffset)
-    // }
-
-
-    gsap.registerPlugin(ScrollTrigger)
     const tl = gsap.timeline()
 
     // timeline animation
@@ -57,6 +38,7 @@ export function gsapMain () {
     )
 
 
+
     // scroll animation right
 
     const tlr1 = gsap.timeline()
@@ -66,7 +48,6 @@ export function gsapMain () {
     const tlr5 = gsap.timeline()
     
 
-    
    //////
     
     tlr1.fromTo('.hexagon1',{
@@ -79,9 +60,10 @@ export function gsapMain () {
         x: 207,
     })
     .to('.hexagon1',{
-        y: -300,
-        scale: 2.15,
-        x: 525,
+        y: -330,  // 330
+        scale: 2.10,
+        x: 525,  
+        className: 'hexagon hexagon1 activeHexagon',
     })
 
     
@@ -96,12 +78,14 @@ export function gsapMain () {
         y: -150,
         scale: 1.4,
         x: 278,
+        className: 'hexagon hexagon2 activeHexagon',
     }
     )
     .to('.hexagon2',{
         y: -330,
         scale: 1,
         x: 606,
+        className: 'hexagon hexagon2',
     })
 
 
@@ -113,11 +97,13 @@ export function gsapMain () {
         x: 0,
         y: 0,
         scale: 1,
+        className: 'hexagon hexagon3 activeHexagon',
     },
     {
         y: -150,
         scale: 0.7,
         x: 270,
+        className: 'hexagon hexagon3',
     })
     .to('.hexagon3',{
         y: -285,
@@ -141,7 +127,7 @@ export function gsapMain () {
     })
     .to('.hexagon4',{
         scale:0,
-
+        zIndex: -999,
     })
 
     ///////
@@ -153,6 +139,7 @@ export function gsapMain () {
     },
     {
         scale:0,
+        zIndex: -999,
     })
 
 
@@ -166,7 +153,7 @@ export function gsapMain () {
         start: '50%',
         end: '90%',
         scrub: true,
-        // toggleActions: "restart pause reverse pause"
+        toggleClass:{targets:".hexagon1", className:"active"}
     })
 
     ScrollTrigger.create({
@@ -175,7 +162,6 @@ export function gsapMain () {
         start: '50%',
         end: '90%',
         scrub: true,
-        // toggleActions: "restart pause reverse pause"
     })
 
     ScrollTrigger.create({
@@ -184,7 +170,6 @@ export function gsapMain () {
         start: '50%',
         end: '90%',
         scrub: true,
-        // toggleActions: "restart pause reverse pause"
     })
 
     ScrollTrigger.create({
@@ -193,7 +178,6 @@ export function gsapMain () {
         start: '50%',
         end: '90%',
         scrub: true,
-        // toggleActions: "restart pause reverse pause"
     })
 
     ScrollTrigger.create({
@@ -202,7 +186,6 @@ export function gsapMain () {
         start: '50%',
         end: '90%',
         scrub: true,
-        // toggleActions: "restart pause reverse pause"
     })
 
 
@@ -257,16 +240,19 @@ export function gsapMain () {
         y: 257,
         scale: 0.5,
         x: -487,
+        className: 'hexagon hexagon3',
     },
     {
         y: 150,
         scale: 0.7,
         x: -270,
+        className: 'hexagon hexagon3',
     })
     .to('.hexagon3',{
         x: 0,
         y: 0,
         scale: 1,
+        className: 'hexagon hexagon3 activeHexagon',
     })
 
 
@@ -281,24 +267,28 @@ export function gsapMain () {
         y: 150,
         scale: 1.45,
         x: -270,
+        className: 'hexagon hexagon4 activeHexagon',
     })
     .to('.hexagon4',{
         x: 0,
         y: 0,
-        scale: 1,   
+        scale: 1, 
+        className: 'hexagon hexagon4',
     })
 
     ///////
 
     tll5.fromTo('.hexagon5',{
         y: 265,
-        scale: 2,
+        scale: 1.9,
         x: -480,
+        className: 'hexagon hexagon5 activeHexagon',
     },
     {
         y: 120,
         scale: 1.4,
         x: -217,
+        className: 'hexagon hexagon5',
     })
     .to('.hexagon5',
     {

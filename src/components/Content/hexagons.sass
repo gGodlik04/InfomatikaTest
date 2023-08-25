@@ -1,0 +1,178 @@
+
+.hexagons
+    display: grid
+    grid-auto-rows: 100vh
+    grid-template-columns: repeat(5, auto)
+    align-items: center
+
+
+
+
+.hexagon 
+    position: relative
+    margin: 1em auto
+    width: 5em        //10em
+    height: 8.66em    //17.32em
+    border-radius: 0.5em/.3em
+    background: #ffff
+    transition: opacity .5s
+    bottom: 3em
+
+.hexagon:before, .hexagon:after 
+    position: absolute
+    width: inherit
+    height: inherit
+    border-radius: inherit
+    background: inherit
+    content: ''
+
+.hexagon:before 
+    -webkit-transform: rotate(60deg)
+    -ms-transform: rotate(60deg)
+    transform: rotate(60deg)
+
+.hexagon:after 
+    -webkit-transform: rotate(-60deg)
+    -ms-transform: rotate(-60deg)
+    transform: rotate(-60deg)
+
+.hexagon1
+    top: 220px
+    left: 275px
+
+.hexagon2
+    width: 7em        
+    height: 12em  
+    top: 100px
+    left: 125px  
+
+.hexagon3    
+    width: 10em        
+    height: 17.32em    
+
+.hexagon4
+    width: 7em        
+    height: 12em 
+    bottom: 200px
+    right: 125px
+
+.hexagon5
+    bottom: 315px
+    right: 270px
+    
+
+p                  
+    display: inline-block
+    position: absolute
+    z-index: 999
+
+
+.hexagon__stadium
+    display: inline-block
+    position: absolute
+    width: 100%
+    text-align: center
+    margin-top: 15%
+
+.hexagon__date
+    position: fixed
+    top: 30%
+    width: 100%
+    font-size: 20px
+    text-align: center
+    font-family: UbuntuBold
+    overflow: none
+    margin: auto
+
+.hexagon__time
+    position: absolute
+    top: 50%
+    width: 100%
+    text-align: center
+
+.hexagon__btn
+    position: absolute
+    top: 65%
+    z-index: 999
+    width: 100%
+    height: 20%
+    background-color: #fff
+    border-radius: 4px
+
+.hexagon__btn:hover
+    background-color: #000
+    color: white
+
+
+.hexagon__stadium
+    display: none 
+
+.hexagon__time
+    display: none
+
+.hexagon__btn
+    display: none
+    
+
+.hexagon1, .hexagon5
+
+    .hexagon__date
+        font-size: 13px
+
+    .hexagon__stadium
+        font-size: 10px  
+
+    .hexagon__time
+         font-size: 10px
+
+    .hexagon__btn
+        font-size: 10px
+        border-radius: 4px
+
+.hexagon2, .hexagon4
+
+    .hexagon__date
+        font-size: 17px
+
+
+.hexagon3
+
+    .hexagon__date
+        font-size: 25px
+
+    .hexagon__stadium
+        font-size: 20px  
+
+    .hexagon__time
+         font-size: 20px  
+        
+    .hexagon__btn
+        font-size: 20px
+        border: 3px solid black
+        border-radius: 4px
+
+.activeHexagon
+
+    .hexagon__stadium
+        display: inline-block
+
+    .hexagon__time
+        display: inline-block
+
+    .hexagon__btn
+        display: inline-block
+
+    .hexagon__date
+        white-space: nowrap
+
+
+
+
+
+
+
+
+
+
+
+
