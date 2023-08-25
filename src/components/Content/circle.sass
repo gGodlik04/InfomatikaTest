@@ -1,0 +1,59 @@
+.Circle
+    position: absolute
+    border: 2px solid white
+    border-radius: 50%
+    left: 550px
+    width: 200px
+    height: 200px
+    z-index: -1000
+    opacity: 50
+    animation: pulsate 2.5s ease-out
+    animation-iteration-count: infinite
+    box-shadow:0 0 150px #474B7A
+
+.bigCircle
+    position: absolute
+    width: 800px
+    height: 800px
+
+.middleCircle
+    position: absolute
+    width: 600px
+    height: 600px
+    left: 650px
+
+.smallCircle
+    width: 400px
+    height: 400px
+    left: 750px
+
+
+// .сircle 
+//   display: flex
+//   background: lightblue
+
+
+// #container::after 
+//   display: flex
+//   background: lightpink
+//   border-radius: 300p
+//   height: 250px
+//   width: 250px
+//   animation: pulsate 2.5s ease-out
+//   animation-iteration-count: infinite
+//   opacity: 0.0
+//   content: ""
+//   z-index: -1
+
+@keyframes pulsate 
+  0% 
+    transform: scale(0.1, 0.1)
+    opacity: 0.0
+  
+  50% 
+    opacity: 1.0
+  
+  100% 
+    transform: scale(1.2, 1.2)
+    opacity: 0.0
+  

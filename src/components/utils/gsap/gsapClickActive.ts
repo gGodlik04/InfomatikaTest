@@ -26,7 +26,7 @@ export function gsapClickActive (hexagonClass : string) {
         gsap.to(window, {duration: 1, scrollTo: 3490});
     }
     if (hexagonClass == "hexagon3"){
-        gsap.to(window, {duration: 1, scrollTo: 2500});
+        gsap.to(window, {duration: 1, scrollTo: 2450}); // 2500
     }
     if (hexagonClass == "hexagon4"){
         gsap.to(window, {duration: 1, scrollTo: 1167});
@@ -34,5 +34,4 @@ export function gsapClickActive (hexagonClass : string) {
     if (hexagonClass == "hexagon5"){
         gsap.to(window, {duration: 1, scrollTo: 0});
     }
-
 }

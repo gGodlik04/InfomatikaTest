@@ -109,7 +109,6 @@ export function gsapText () {
         start: '50%',
         end: '90%',
         scrub: true,
-        // toggleActions: "restart pause reverse pause"
     })
 
     ScrollTrigger.create({
@@ -118,7 +117,6 @@ export function gsapText () {
         start: '50%',
         end: '90%',
         scrub: true,
-        // toggleActions: "restart pause reverse pause"
     })
 
     ScrollTrigger.create({
@@ -127,7 +125,6 @@ export function gsapText () {
         start: '50%',
         end: '90%',
         scrub: true,
-        // toggleActions: "restart pause reverse pause"
     })
 
     ScrollTrigger.create({
@@ -136,7 +133,6 @@ export function gsapText () {
         start: '50%',
         end: '90%',
         scrub: true,
-        // toggleActions: "restart pause reverse pause"
     })
 
     ScrollTrigger.create({
@@ -145,7 +141,6 @@ export function gsapText () {
         start: '50%',
         end: '90%',
         scrub: true,
-        // toggleActions: "restart pause reverse pause"
     })
 
 }

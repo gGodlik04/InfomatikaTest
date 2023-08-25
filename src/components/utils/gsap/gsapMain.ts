@@ -34,9 +34,26 @@ export function gsapMain () {
         duration: 2,
         stagger: 0.15
         
-    }
+    },
     )
-
+    .fromTo('.trapezoidL', {
+        x:-500,
+        scale:0,
+    },
+    {
+        x: 0,
+        scale: 1,
+    })
+    .fromTo('.trapezoidR', {
+        x:2500,
+        scale:0,
+        duration: 1
+    },
+    {
+        x: 0,
+        scale: 1,
+    })
+    
 
 
     // scroll animation right
@@ -65,6 +82,8 @@ export function gsapMain () {
         x: 525,  
         className: 'hexagon hexagon1 activeHexagon',
     })
+
+        
 
     
     ///////
@@ -341,5 +360,7 @@ export function gsapMain () {
         end: '50%',
         scrub: true,
     })
+
+
 }
 
