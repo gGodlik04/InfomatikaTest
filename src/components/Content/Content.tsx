@@ -12,18 +12,18 @@ import { gsapTrapezoid } from "../utils/gsap/gsapTrapezoid";
 
 
 
-
-
-
-
 export const Content: FC<IContent> = (props: IContent) => {
     
     const dataContent = data;
     
     const makeHexagonActive = (e: React.MouseEvent<HTMLDivElement>) => {
+
         const elem = e.target as HTMLElement;
-        const hexagonClass = elem.classList[1]; 
-        gsapClickActive(hexagonClass);
+        const hexagonClass :string = elem.classList[1]; 
+
+        const reg = /hexagon./gm
+        const elemParent = elem.parentNode as HTMLElement
+        (reg.test(hexagonClass)) ? gsapClickActive(hexagonClass) : gsapClickActive(elemParent.classList[1]);
     }
 
     
@@ -59,7 +59,7 @@ export const Content: FC<IContent> = (props: IContent) => {
                             <div className={nameClassTrapezoidLeft}><span>{elem.firstMember}</span></div>
                             <div className={nameClassHexagon} onClick={makeHexagonActive}>
                                 <p className="hexagon__stadium">{elem.stadium}</p>
-                                <p className="hexagon__date">{elem.date.toUpperCase()}</p>
+                                <p className="hexagon__date" onClick={makeHexagonActive}>{elem.date.toUpperCase()}</p>
                                 <p className="hexagon__time">{elem.time}</p>
                                 <button className="hexagon__btn">Купить билет</button>
                             </div>
