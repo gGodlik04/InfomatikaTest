@@ -67,7 +67,6 @@ export function gsapTrapezoid () {
 
     ScrollTrigger.create({
         animation: tltrl1,
-        trigger: '#hexagon3',
         start: '50%',
         end: '90%',
         scrub: true,
@@ -76,7 +75,6 @@ export function gsapTrapezoid () {
 
     ScrollTrigger.create({
         animation: tltrl2,
-        trigger: '#hexagon3',
         start: '50%',
         end: '90%',
         scrub: true,
@@ -84,7 +82,6 @@ export function gsapTrapezoid () {
 
     ScrollTrigger.create({
         animation: tltrl3,
-        trigger: '#hexagon3',
         start: '50%',
         end: '90%',
         scrub: true,
@@ -92,7 +89,6 @@ export function gsapTrapezoid () {
 
     ScrollTrigger.create({
         animation: tltrl4,
-        trigger: '#hexagon3',
         start: '50%',
         end: '90%',
         scrub: true,
@@ -100,7 +96,6 @@ export function gsapTrapezoid () {
 
     ScrollTrigger.create({
         animation: tltrl5,
-        trigger: '#hexagon3',
         start: '50%',
         end: '90%',
         scrub: true,
@@ -163,7 +158,6 @@ export function gsapTrapezoid () {
     
         ScrollTrigger.create({
             animation: tltrl6,
-            trigger: '#hexagon3',
             start: '50%',
             end: '90%',
             scrub: true,
@@ -172,7 +166,6 @@ export function gsapTrapezoid () {
     
         ScrollTrigger.create({
             animation: tltrl7,
-            trigger: '#hexagon3',
             start: '50%',
             end: '90%',
             scrub: true,
@@ -180,7 +173,6 @@ export function gsapTrapezoid () {
     
         ScrollTrigger.create({
             animation: tltrl8,
-            trigger: '#hexagon3',
             start: '50%',
             end: '90%',
             scrub: true,
@@ -188,7 +180,6 @@ export function gsapTrapezoid () {
     
         ScrollTrigger.create({
             animation: tltrl9,
-            trigger: '#hexagon3',
             start: '50%',
             end: '90%',
             scrub: true,
@@ -196,7 +187,6 @@ export function gsapTrapezoid () {
     
         ScrollTrigger.create({
             animation: tltrl10,
-            trigger: '#hexagon3',
             start: '50%',
             end: '90%',
             scrub: true,
@@ -263,7 +253,6 @@ export function gsapTrapezoid () {
 
     ScrollTrigger.create({
         animation: tltrr1,
-        trigger: '#hexagon3',
         start: '0%',
         end: '50%',
         scrub: true,
@@ -271,7 +260,6 @@ export function gsapTrapezoid () {
 
     ScrollTrigger.create({
         animation: tltrr2,
-        trigger: '#hexagon3',
         start: '0%',
         end: '50%',
         scrub: true,
@@ -279,7 +267,6 @@ export function gsapTrapezoid () {
 
     ScrollTrigger.create({
         animation: tltrr3,
-        trigger: '#hexagon3',
         start: '0%',
         end: '50%',
         scrub: true,
@@ -287,7 +274,6 @@ export function gsapTrapezoid () {
 
     ScrollTrigger.create({
         animation: tltrr4,
-        trigger: '#hexagon3',
         start: '0%',
         end: '50%',
         scrub: true,
@@ -295,7 +281,6 @@ export function gsapTrapezoid () {
 
     ScrollTrigger.create({
         animation: tltrr5,
-        trigger: '#hexagon3',
         start: '0%',
         end: '50%',
         scrub: true,
@@ -359,7 +344,6 @@ export function gsapTrapezoid () {
     
         ScrollTrigger.create({
             animation: tltrr6,
-            trigger: '#hexagon3',
             start: '0%',
             end: '50%',
             scrub: true,
@@ -367,7 +351,6 @@ export function gsapTrapezoid () {
     
         ScrollTrigger.create({
             animation: tltrr7,
-            trigger: '#hexagon3',
             start: '0%',
             end: '50%',
             scrub: true,
@@ -375,7 +358,6 @@ export function gsapTrapezoid () {
     
         ScrollTrigger.create({
             animation: tltrr8,
-            trigger: '#hexagon3',
             start: '0%',
             end: '50%',
             scrub: true,
@@ -383,7 +365,6 @@ export function gsapTrapezoid () {
     
         ScrollTrigger.create({
             animation: tltrr9,
-            trigger: '#hexagon3',
             start: '0%',
             end: '50%',
             scrub: true,
@@ -391,7 +372,6 @@ export function gsapTrapezoid () {
     
         ScrollTrigger.create({
             animation: tltrr10,
-            trigger: '#hexagon3',
             start: '0%',
             end: '50%',
             scrub: true,

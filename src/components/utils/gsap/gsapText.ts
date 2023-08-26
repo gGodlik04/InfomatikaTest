@@ -105,7 +105,6 @@ export function gsapText () {
 
     ScrollTrigger.create({
         animation: tlr1,
-        trigger: '#hexagon3',
         start: '50%',
         end: '90%',
         scrub: true,
@@ -113,7 +112,6 @@ export function gsapText () {
 
     ScrollTrigger.create({
         animation: tlr2,
-        trigger: '#hexagon3',
         start: '50%',
         end: '90%',
         scrub: true,
@@ -121,7 +119,6 @@ export function gsapText () {
 
     ScrollTrigger.create({
         animation: tlr3,
-        trigger: '#hexagon3',
         start: '50%',
         end: '90%',
         scrub: true,
@@ -129,7 +126,6 @@ export function gsapText () {
 
     ScrollTrigger.create({
         animation: tlr4,
-        trigger: '#hexagon3',
         start: '50%',
         end: '90%',
         scrub: true,
@@ -137,7 +133,6 @@ export function gsapText () {
 
     ScrollTrigger.create({
         animation: tlr5,
-        trigger: '#hexagon3',
         start: '50%',
         end: '90%',
         scrub: true,

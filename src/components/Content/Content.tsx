@@ -28,9 +28,6 @@ export const Content: FC<IContent> = (props: IContent) => {
 
     
     useEffect(() => {
-        // sessionStorage.scrollTop('scrollpos', "2500");
-        console.log(sessionStorage);
-        console.log(localStorage.getItem('scrollpos'))
         window.scrollTo(0, 2500);
         gsapHeader();
         gsapMain();
