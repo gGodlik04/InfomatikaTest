@@ -360,7 +360,5 @@ export function gsapMain () {
         end: '50%',
         scrub: true,
     })
-
-
 }
 
