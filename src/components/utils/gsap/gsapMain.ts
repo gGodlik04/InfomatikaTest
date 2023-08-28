@@ -12,7 +12,7 @@ export function gsapMain () {
     const tl = gsap.timeline()
 
     // timeline animation
-    tl.fromTo(window,{}, {duration: 0, scrollTo: 2500})
+    tl.fromTo(window,{}, {duration: 1, scrollTo: 2500}).set('body', { overflow: 'hidden' })
     .fromTo('.navbar',{
         y: -50,
         opacity: 0
@@ -54,7 +54,7 @@ export function gsapMain () {
     {
         x: 0,
         scale: 1,
-    })
+    }).set('body', { overflow: 'visible' })
     
 
 

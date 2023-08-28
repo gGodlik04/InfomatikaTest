@@ -28,7 +28,6 @@ export const Content: FC<IContent> = (props: IContent) => {
 
     
     useEffect(() => {
-        window.scrollTo(0, 2500);
         gsapHeader();
         gsapMain();
         gsapText();
