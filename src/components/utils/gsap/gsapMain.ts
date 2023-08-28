@@ -1,7 +1,9 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger)
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
+gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollToPlugin);
 
 export function gsapMain () {
 
@@ -10,8 +12,8 @@ export function gsapMain () {
     const tl = gsap.timeline()
 
     // timeline animation
-
-    tl.fromTo('.navbar',{
+    tl.fromTo(window,{}, {duration: 0, scrollTo: 2500})
+    .fromTo('.navbar',{
         y: -50,
         opacity: 0
     },
